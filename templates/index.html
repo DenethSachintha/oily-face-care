@@ -1,9 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>My First Webpage</title>
+    <title>
+        Oily Face Care
+    </title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        button {
+            color: aliceblue;
+            background-color: blue;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello, World! From Template</h1>
+    <h1>Oily Face Care</h1>
+    <div>
+        <form method="post" action="/predict" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/jpeg, image/png">
+            <div>
+                <button type="submit">Button</button>
+                <a href="/">Reset</a>
+            </div>
+        </form>        
+    </div>
+    <div>
+        <p>{{prediction}}</p>
+        <!-- {% if prediction %}
+        {% if prediction == 1 %}
+        <h2 style="color: red">Spam</h2>
+        {% else %}
+        <h2 style="color: green">Not Spam</h2>
+        {% endif %}
+        {% endif %} -->
+    </div>
 </body>
+
 </html>
+
