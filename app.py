@@ -30,7 +30,7 @@ def app():
         st.write('The {} percentage in the image is {:0.2f}%'.format(
             predicted_class, predicted_percentage))
 
-        if predicted_class == 'Oil' and 100 > predicted_percentage >= 95:
+        if predicted_class == 'Oil' and 100 >= predicted_percentage >= 95:
             st.write('Recommendations for oiliness level 4:')
             st.markdown('- Use oil-free products and blotting papers to control excess oil on the skin.')
             st.markdown('- Consider using a gentle exfoliant to unclog pores and prevent breakouts.')
